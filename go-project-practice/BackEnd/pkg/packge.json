@@ -1,0 +1,38 @@
+{
+    "mysql": {
+        "username": "root",
+        "password": "20030216",
+        "host": "127.0.0.1",
+        "port": 3306,
+        "Dbname": "educationaladministration",
+        "timeout": "10s"
+    },
+    "rsa_bit": 1024,
+    "timing": 24,
+    "jwt": {
+        "jwt_key": "gdgc2023",
+        "registeredClaims": {
+            "Issuer": "root",
+            "Subject": "UserAll",
+            "randIDlen": 10,
+            "hours": 6
+        }
+    },
+    "cos": {
+        "appId": "https://educational-1309419557.cos.ap-nanjing.myqcloud.com",
+        "secretID": "AKIDNbgW9b2FMI5h6pKbigS5ZqtvuoYJ0eBk",
+        "secretKey": "mNq6B5d1BSGuY9a5e4Nh8SbXFsGeuztp"
+    },
+    "excel_pkg": {
+        "title": "2023届毕业生获得技能证书一览表",
+        "nouploadcolor": "#f0ece4",
+        "markcolor": "#fcfc04"
+    },
+    "log": {
+        "level": "debug",
+        "filename": "Serve.log",
+        "maxsize": 500,
+        "max_age": 7,
+        "max_backups": 10
+    }
+}

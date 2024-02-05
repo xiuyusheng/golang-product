@@ -1,0 +1,49 @@
+EMAIL:
+  FROM: "3394954185@qq.com" #发件人
+  ADDR: "smtp.qq.com:25" #邮件服务器地址
+  AUTH:
+    IDENTIDIY: "" #身份验证
+    USERNAME: "3394954185@qq.com" #用户名
+    HOSE: "smtp.qq.com" #主机
+    PASSWORD: "zuczxsjbvwsbcjfe" #密码
+
+JWT:
+  SECRET: "Graduation-Design" #签名字符串
+  EXPIRESAT: 3600 #过期时间
+  ISSUER: "Graduation-Design" #签发人
+  SUBJECT: "UserAll" #主题
+  RANDIDLEN: 32 #随机ID长度
+
+RSA:
+  TIMING: 24 #定时任务时间间隔
+  RSA_BIT: 1024 #rsa位数
+
+COS:
+  APPID: "https://educational-1309419557.cos.ap-nanjing.myqcloud.com" #腾讯云cos,存储桶地址
+  SECRETID: "AKIDNbgW9b2FMI5h6pKbigS5ZqtvuoYJ0eBk" #腾讯云cos，secretID
+  SECRETKEY: "mNq6B5d1BSGuY9a5e4Nh8SbXFsGeuztp" #腾讯云cos，secretKey
+
+LOG:
+  LEVEL: "debug" #日志级别
+  FILENAME: "./docs/Serve.log" #日志文件名
+  MAXSIZE: 500 #单位MB
+  MAX_AGE: 7 #单位天
+  MAX_BACKUPS: 10 #最大备份数量
+
+MYSQL:
+  USERNAME: "root" #数据库用户名
+  PASSWORD: "20030216" #数据库密码
+  HOST: "127.0.0.1" #数据库地址
+  PORT: 3306 #数据库端口
+  DBNAME: "questionnairesurvey" #数据库名
+  TIMEOUT: "10s" #数据库连接超时时间
+
+REDIS:
+  USERNAME: "" #redis用户名
+  PASSWORD: "123456" #redis密码
+  HOST: "127.0.0.1" #redis地址
+  PORT: 6379 #redis端口
+  TIMEOUT: 10 #redis连接超时时间
+
+REDIS_RSAPUBKEY:
+  KEY_DURATION: 3 #redis中存储rsa公钥的有效时间
